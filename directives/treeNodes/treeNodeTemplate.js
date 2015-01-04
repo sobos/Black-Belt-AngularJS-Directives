@@ -3,6 +3,7 @@ angular.module('treeNodeTemplateModule', ['directives/treeNodes/treeNodeTemplate
 .directive("treeNodeTemplate", function($compile) {
     return {
         restrict: "EA",
+        replace: true,
         transclude: true,
         scope: {family: '='},
         templateUrl: 'directives/treeNodes/treeNodeTemplate.tpl.html',
